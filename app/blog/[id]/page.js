@@ -9,7 +9,7 @@ async function getPost(id) {
 }
 
 export default async function BlogDetail({ params }) {
-  const { id } = await params;   // 🔥 QUAN TRỌNG (fix chính)
+  const { id } = await params;
 
   const post = await getPost(id);
 
